@@ -27,6 +27,8 @@ RUN \
   git config --global user.name "lab1321" && \
   git clone https://github.com/ezScrum/ezScrum.git && \
   cd ezScrum && \
+  cp ezscrum_default.ini ezscrum.ini && \
+  replace "127.0.0.1" "140.124.181.87" --ezscrum.ini
 CMD git pull origin develop
 #  ant compileSourceCode cleanUT.Dir compileUTcode runUT
   #compileSourceCode, cleanUT.Dir, compileUTcode, runUT
